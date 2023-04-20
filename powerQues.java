@@ -10,9 +10,7 @@ public class powerQues {
         System.out.println("enter two no.s");
         n=ob.nextInt();
         k=ob.nextInt();
-        while(t-->0){
             
-        }
         ob.close();
 
     }
