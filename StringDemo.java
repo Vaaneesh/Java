@@ -18,22 +18,31 @@ public class StringDemo {
         System.out.println(a.substring(1));
         System.out.println(a.substring(0, a.length()-1));
         System.out.println("SUBSTRING=> ");
-        String d="Hello";
+        String d="nitin";
         for(int i=0;i<d.length();i++){
             for(int j=i+1;j<d.length();j++){
-                System.out.println(d.substring(i,j+1));
+                String s3=d.substring(i, j);
+                int n=s3.length();
+                String s4="";
+                for(int k=n-1;k>=0;k--){
+                    s4+=s3.charAt(k);
+                }
+                if(s4.equals(s3))
+                System.out.println(s3+" Palindrome");
+                else
+                System.out.println(s3+" Not palindrome");
             }
         }
-        String s1="yoy";
+        String s1="yoyoy";
         String s2="";
         int n=s1.length();
         for(int i=n-1;i>=0;i--){
             s2+=s1.charAt(i);
         }
         if(s1.equals(s2)){
-            System.out.println("Pallindrome");
+            System.out.println("Palindrome");
         }
         else
-        System.out.println("Not pallindrome");
+        System.out.println("Not palindrome");
     }
 }
