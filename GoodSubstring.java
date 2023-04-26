@@ -9,7 +9,7 @@ public class GoodSubstring {
         int n=s.length();
         for(int i=0;i<n;i++){
             for(int j=i+1;j<n;j++){
-                s2=s.substring(i, j);
+                s2=s.substring(i, j+1);
                 if(isVowel(s2)){
                     if(len<s2.length()){
                         len=s2.length();
