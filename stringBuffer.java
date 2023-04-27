@@ -4,8 +4,8 @@ public class stringBuffer {
         StringBuffer ob=new StringBuffer(s);
         System.out.println(ob);
         
-        //Difference between String & String buffer=>
-        //String = slow whereas String buffer=fast;
+        // Difference between String & String buffer=>
+        // String = slow whereas String buffer=fast;
         // int start=(int)System.currentTimeMillis();
         // for(int i=0;i<10000;i++){
         //     s+="a";
