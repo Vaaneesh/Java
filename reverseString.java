@@ -2,7 +2,7 @@ import java.util.*;
 
 public class reverseString {
     public static void main(String[] args) {
-        try (Scanner ob = new Scanner(System.in)) {
+        Scanner ob = new Scanner(System.in);
             String n=ob.nextLine();
             n=' '+n;
             String j="";
@@ -17,7 +17,6 @@ public class reverseString {
                     j=n.charAt(i)+j;
                 }
             }
-            ob.close();
-        }
+        ob.close();
     }
 }
