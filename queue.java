@@ -32,8 +32,12 @@ public class queue {
         if(isEmpty()){
             throw new Exception("Queue is empty");
         }
-        for(int i=front;i<rear;i++){
-            System.out.print(arr[i]+" ");
+        int i=0;
+        int k=front;
+        while(i<size){
+            System.out.print(arr[k]+" ");
+            k=(k+1)%arr.length;
+            i++;
         }
         System.out.println();
     }
