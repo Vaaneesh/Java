@@ -1,8 +1,8 @@
 public class queue {
     int front=0,size=0,rear=0;
-    int arr[];
+    protected int arr[];
     public queue(){
-        arr=new int[10];
+        arr=new int[5];
     }
     public queue(int n){
         arr=new int[n];
