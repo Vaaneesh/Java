@@ -4,7 +4,7 @@ public class stackFunctions {
     int top=-1;
     protected int arr[];
     public stackFunctions(){
-        // int arr[]=new int[10];
+        arr=new int[5];
     }
     public stackFunctions(int cap){
         arr=new int[cap];
