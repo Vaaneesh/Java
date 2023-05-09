@@ -2,13 +2,13 @@
 public class stackFunctions {
     int size=0;
     int top=-1;
-    int arr[]=new int[10];
-    // public stackFunctions(){
-    //     int arr[]=new int[10];
-    // }
-    // public stackFunctions(int cap){
-    //     arr=new int[cap];
-    // }
+    protected int arr[];
+    public stackFunctions(){
+        // int arr[]=new int[10];
+    }
+    public stackFunctions(int cap){
+        arr=new int[cap];
+    }
     public boolean isEmpty()throws Exception{
         if(top==-1){
             // return true;
@@ -22,9 +22,9 @@ public class stackFunctions {
         }
         return false;
     }
-    public void push(int val){
+    public void push(int val)throws Exception{
         if(isfull()){
-            new Exception("Stack is full");
+            throw new Exception("Stack is full");
         }
         top++;
         arr[top]=val;
