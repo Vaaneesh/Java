@@ -1,34 +1,33 @@
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.Stack;
 
 public class Stockspan {
     public static void main(String[] args) {
         Scanner ob=new Scanner(System.in);
-        System.out.println("enter size");
+        System.out.println("Enter size");
         int n=ob.nextInt();
-        int arr[]=new int[n];
         System.out.println("Enter elements");
+        int arr[]=new int[n];
+        // int c=0;
         for(int i=0;i<n;i++){
             arr[i]=ob.nextInt();
         }
-        int c=1;
-        int f=0;
-        int arr2[]=new int[n];
-        for(int i=1;i<n-1;i++){
-            for(int j=i+1;j<n;j++){
-                if(arr[j]<arr[i]){
-                    arr2[i]=c;
-                    c++;
-                    f++;
-                    break;
-                }
+        Stack <Integer>st=new Stack<>();
+        int ans[]=new int[n];
+        for(int i=0;i<n;i++){
+            while(!st.isEmpty()&& arr[i]>arr[st.peek()]){
+                st.pop();
             }
-            if(f==0)
-            arr2[i]=1;
-            f=0;
+            if(st.isEmpty()){
+                ans[i]=i+1;
+            }
+            else{
+                ans[i]=i-st.peek();
+            }
+            st.push(i);
         }
-        arr2[n-1]=1;
-        System.out.println(Arrays.toString(arr2));
+        System.out.println(Arrays.toString(ans));
         ob.close();
     }
 }
