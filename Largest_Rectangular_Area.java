@@ -24,10 +24,24 @@ public class Largest_Rectangular_Area {
                 }
                 else{
                     int lm=st.peek();
-                    a=(rm-lm-i)*height;
+                    a=(rm-lm-1)*height;
+                    area=Math.max(area, a);
+                }
+        }
+    }
+        for(int i=0;i<n;i++){
+            while(!st.empty()&& arr[i]<arr[st.peek()]){
+                int rm=arr.length;
+                int height=arr[st.pop()];
+                if(st.isEmpty()){
+                    a=rm*height;
                     area=Math.max(area,a);
                 }
-
+                else{
+                    int lm=st.peek();
+                    a=(rm-lm-1)*height;
+                    area=Math.max(area,a);
+                }
             }
             System.out.println(area);
         }
