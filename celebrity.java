@@ -28,9 +28,21 @@ public class celebrity {
                     }
                 }
             }
-            System.out.println(st);
-
-
+            // System.out.println(st);
+            boolean flag=false;
+            int ans=st.pop();
+            for(int i=0;i<n;i++){
+                if((i!=ans)&&(arr[ans][i]==1 || arr[i][ans]==0)){
+                    flag=true;
+                    break;
+                }
+            }
+            if(flag){
+                System.out.println(-1);
+            }
+            else{
+                System.out.println(ans);
+            }
 
 
             //                           APPROACH -2 =>
