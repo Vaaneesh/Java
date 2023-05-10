@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Stack;
 
 public class celebrity {
     public static void main(String[] args) {
@@ -11,20 +12,50 @@ public class celebrity {
                     arr[i][j]=ob.nextInt();
                 }
             }
-            int c=0;
+            Stack <Integer> st= new Stack<>();
             for(int i=0;i<n;i++){
-                for(int j=0;j<n;j++){
-                    if((arr[i][j]==1)&&(i!=j)){
-                        c++;
+                st.push(i);
+            }
+            while(st.size()!=1){
+                int a=st.pop();
+                int b=st.pop();
+                if(arr[a][b]==1){
+                    st.push(b);
+                }
+                else{
+                    if(arr[b][a]==1){
+                        st.push(a);
                     }
                 }
-                if(c==0){
-                    System.out.println(i);
-                    return;
-                }
-                c=0;
             }
-            System.out.println("No celeb");
+            System.out.println(st);
+
+
+
+
+            //                           APPROACH -2 =>
+
+
+
+            // for(int i=0;i<n;i++){
+            //     for(int j=0;j<n;j++){
+            //         arr[i][j]=ob.nextInt();
+            //     }
+            // }
+            // int c=0;
+            // for(int i=0;i<n;i++){
+            //     for(int j=0;j<n;j++){
+            //         if((arr[i][j]==1)&&(i!=j)){
+            //             c++;
+            //         }
+            //     }
+            //     if(c==0){
+            //         System.out.println(i);
+            //         return;
+            //     }
+            //     c=0;
+            // }
+            // System.out.println("No celeb");
             ob.close();
         }
     }
