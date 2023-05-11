@@ -13,7 +13,8 @@ public class LinkedList_Client {
         // l1.addAtpos(70, 3);
         // l1.deleteFirst();
         // l1.deleteLast();
-        l1.deleteAtpos(4);
+        // l1.deleteAtpos(4);
+        System.out.println(l1.getMid());
         l1.display();
         System.out.println();
         System.out.println(l1.tail.data);

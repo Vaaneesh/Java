@@ -96,6 +96,17 @@ public class LinkedList {
             size--;
         }
     }
+    public int getMid(){
+        int k;
+        if(size%2==0){
+            k=size/2;
+        }
+        else{
+            k=(size/2)+1;
+        }
+        Node temp=getNode(k);
+        return temp.data;
+    }
 
     public int getFirst(){
         return head.data;
