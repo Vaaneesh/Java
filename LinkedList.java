@@ -96,6 +96,27 @@ public class LinkedList {
             size--;
         }
     }
+
+    public int getFirst(){
+        return head.data;
+    }
+    public int getLast(){
+        return tail.data;
+    }
+    public int getAtpos(int k){
+        if(k==0){
+            return head.data;
+        }
+        if(k==size){
+            return tail.data;
+        }
+        return getNode(k).data;
+    }
+
+    public int size(){
+        return size;
+    }
+
     public void display(){
         Node temp=head;
         while(temp!=null){
