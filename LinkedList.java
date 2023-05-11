@@ -72,8 +72,30 @@ public class LinkedList {
         Node temp=head;
         head=head.next;
         temp.next=null;
+        size--;
     }
 
+    public void deleteLast(){
+        Node temp=getNode(size-1);
+        temp.next=null;
+        tail=temp;
+        size--;
+    }
+    public void deleteAtpos(int k){
+        if(k==1){
+            deleteFirst();
+        }
+        else if(k==size){
+            deleteLast();
+        }
+        else{
+            Node temp1=getNode(k-1);
+            Node temp2=getNode(k);
+            temp1.next=temp2.next;
+            temp2=null;
+            size--;
+        }
+    }
     public void display(){
         Node temp=head;
         while(temp!=null){
