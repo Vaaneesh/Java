@@ -9,6 +9,10 @@ public class LinkedList_Client {
         l1.addLast(60);
         l1.display();
         System.out.println();
+        // System.out.println(l1.getNode(2).data);
+        l1.addAtpos(70, 3);
+        l1.display();
+        System.out.println();
         System.out.println(l1.tail.data);
     }
 }

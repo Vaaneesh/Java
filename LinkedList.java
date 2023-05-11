@@ -53,6 +53,21 @@ public class LinkedList {
         return temp;
     }
 
+    public void addAtpos(int val,int k){
+        if(size==0){
+            addFirst(val);
+        }
+
+        else{
+            Node temp1=getNode(k-1);
+            Node temp2=getNode(k);
+            Node n=new Node(val);
+            temp1.next=n;
+            n.next=temp2;
+            size++;
+        }
+    }
+
     public void display(){
         Node temp=head;
         while(temp!=null){
