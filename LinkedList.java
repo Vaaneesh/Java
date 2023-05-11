@@ -17,11 +17,12 @@ public class LinkedList {
     Node tail;
 
     public void addFirst(int val){
-        Node n=new Node(); //new node is created
-        n.data=val; //value of new node will be = val
+        Node n=new Node(val); //new node is created
+        // n.data=val; //value of new node will be = val
 
         if(size==0){
             head=n;
+            tail=n; //for size 0 tail will be this only
             size++;
         }
         else{
@@ -29,6 +30,27 @@ public class LinkedList {
             head=n; //new node will be at head
             size++;
         }
+    }
+
+    public void addLast(int val){
+        if(size==0){
+            addFirst(val);
+        }
+        else{
+            Node n=new Node(val);
+            // n.data=val;
+            tail.next=n;
+            tail=n;
+            size++;
+        }
+    }
+
+    public Node getNode(int k){ //to get address of the next node where we want to add new node
+        Node temp=head;
+        for(int i=1;i<k;i++){
+            temp=temp.next;
+        }
+        return temp;
     }
 
     public void display(){
