@@ -68,6 +68,12 @@ public class LinkedList {
         }
     }
 
+    public void deleteFirst(){
+        Node temp=head;
+        head=head.next;
+        temp.next=null;
+    }
+
     public void display(){
         Node temp=head;
         while(temp!=null){
