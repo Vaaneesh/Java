@@ -13,9 +13,14 @@ public class Multithreading implements Runnable{
 
     public static void main(String[] args) {
         Multithreading m1 = new Multithreading();
-        Thread t1 =new Thread(m1);
-        Thread t2 =new Thread(m1);
-
+        Thread t1 =new Thread(m1,"A");
+        Thread t2 =new Thread(m1,"B");
+        System.out.println(t1.getName());
+        System.out.println(t2.getName());
+        t1.setPriority(9);
+        t2.setPriority(7);
+        System.out.println(t1.getPriority());
+        System.out.println(t2.getPriority());
         t1.start();
         t2.start();
     }
