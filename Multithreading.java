@@ -22,6 +22,7 @@ public class Multithreading implements Runnable{
         System.out.println(t1.getPriority());
         System.out.println(t2.getPriority());
         t1.start();
+        System.out.println(t1.isAlive());
         t2.start();
     }
 }
