@@ -11,7 +11,7 @@ class AvailableTicket{
     public void run(){
 
     }
-    public void booking(){
+    public synchronized void booking(){
         if(Thread.currentThread().getName()=="John"){
             if(avl>=reqJ){
                 System.out.println("John : tickets booked= "+reqJ);
