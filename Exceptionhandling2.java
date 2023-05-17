@@ -6,15 +6,24 @@ public class Exceptionhandling2 {
         return age;
     }
     public void setAge(int age)throws Exception{
-        if(age<0){
-            System.out.println("Age can't be -ve");
-        }
-        else{
-            this.age=age;
-        }
+        // if(age<0){
+        //     System.out.println("Age can't be -ve");
+        // }
+        // else{
+        //     this.age=age;
+        // }
         if(age<0){
             throw new Exception("Age cant be -ve ");
         }
+        // try{
+        //     if(age<0){
+        //         throw new Exception("Age cant be -ve ");
+        //     }
+    
+        //     }
+        //     catch(Exception e){
+        //         e.printStackTrace();
+        //     }
     }
     public String getName(){
         return name;

@@ -4,6 +4,13 @@ public class Exceptionhandling {
         // a.age=20;
         // a.name="Vasu";
         // a.intro();
+        // try{
+        //     a.setAge(-2);
+
+        // }
+        // catch(Exception e){
+        //     e.printStackTrace();
+        // }
         a.setAge(-2);
         System.out.println(a.getAge());
     }

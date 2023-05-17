@@ -2,7 +2,7 @@ public class try_CatchDemo {
     public static void main(String[] args) {
         int arr[]=new int[5];
         int a=10;
-        String s="";
+        String s=null;
         try{
             int k=a/0;
             arr[7]=28;
@@ -16,6 +16,10 @@ public class try_CatchDemo {
             e.printStackTrace();
         }
         catch(ArrayIndexOutOfBoundsException e){
+            e.printStackTrace();
+        }
+        catch(Exception e)
+        {
             e.printStackTrace();
         }
         finally{ //this block will run irrespective of the exception
