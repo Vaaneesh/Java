@@ -13,7 +13,7 @@ public class Exceptionhandling2 {
             this.age=age;
         }
         if(age<0){
-            throw new Exception("Age cant be -ve dumbfuck");
+            throw new Exception("Age cant be -ve ");
         }
     }
     public String getName(){
