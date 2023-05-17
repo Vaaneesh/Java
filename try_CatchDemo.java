@@ -2,7 +2,7 @@ public class try_CatchDemo {
     public static void main(String[] args) {
         int arr[]=new int[5];
         int a=10;
-        String s=null;
+        String s="";
         try{
             int k=a/0;
             arr[7]=28;
