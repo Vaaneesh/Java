@@ -12,6 +12,6 @@ public class interchange {
                 System.out.print((char)(s.charAt(i)-32));
             }
         }
-    ob.close();
+        ob.close();
     }
 }
