@@ -9,5 +9,7 @@ public class carClient {
         arr[4]=new car(3200,200,"gravity grey");
         c.display(arr);
         c.sort(arr);
+        System.out.println("After sorting");
+        c.display(arr);
     }
 }
