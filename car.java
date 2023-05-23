@@ -1,11 +1,13 @@
 public class car {
     int price;
     int speed;
-    int color;
+    String color;
+
     public car(){
 
     }
-    public car(int price,int speed,int color){
+
+    public car(int price,int speed,String color){
         this.price=price;
         this.color=color;
         this.speed=speed;
