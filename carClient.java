@@ -8,7 +8,8 @@ public class carClient {
         arr[3]=new car(2200,170,"red");
         arr[4]=new car(3200,200,"gravity grey");
         c.display(arr);
-        c.sort(arr);
+        // c.sort(arr);
+        c.sort(arr,new carColorComparator());
         System.out.println("After sorting");
         c.display(arr);
     }
