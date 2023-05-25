@@ -4,7 +4,7 @@ public class Treemap {
     public static void main(String[] args) {
         LinkedHashMap<Integer,String> map=new LinkedHashMap<>();//in same order of insertion of values
         // TreeMap<Integer,String> map=new TreeMap<>();
-        //In tree map it is printed in unsorted way(random)
+        //In tree map it is printed in sorted way
         map.put(3,"what");
         map.put(2,"sup");
         map.put(1, "yo");
