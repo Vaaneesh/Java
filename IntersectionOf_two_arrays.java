@@ -7,14 +7,8 @@ public class IntersectionOf_two_arrays {
         Scanner ob=new Scanner(System.in);
         HashSet<Integer> n1=new HashSet<>();
         HashSet<Integer>n2=new HashSet<>();
-        int arr1[]=new int[3];
-        int arr2[]=new int[3];
-        for(int i=0;i<3;i++){
-            arr1[i]=ob.nextInt();
-        }
-        for(int i=0;i<3;i++){
-            arr2[i]=ob.nextInt();
-        }
+        int arr1[]={1,3,2};
+        int arr2[]= {3,4,2,6};
         for(int k:arr1){
             n1.add(k);
         }
@@ -23,7 +17,8 @@ public class IntersectionOf_two_arrays {
                 n2.add(k);
             }
         }
-        int arr[]=new int[n2.size()];
+        int n=n2.size();
+        int arr[]=new int[n];
         int c=0;
         for(int k:n2){
             arr[c]=k;
