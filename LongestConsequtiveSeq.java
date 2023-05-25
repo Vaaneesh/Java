@@ -16,5 +16,18 @@ public class LongestConsequtiveSeq {
             }
         }
         System.out.println(map);
+        int ans=0;
+        for(int a:map.keySet()){
+            if(map.get(a)){
+                int count=0;
+                int key=a;
+                while(map.containsKey(key)){
+                    count++;
+                    key++;
+                }
+                ans=Math.max(count,ans);
+            }
+        }
+        System.out.println(ans);
     }
 }
