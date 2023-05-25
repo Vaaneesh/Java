@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Hashmap {
     public static void main(String[] args) {
-        HashMap<Integer,String> map=new HashMap<>();
+        HashMap<Integer,String> map=new HashMap<>();//output will be in unsorted way(random)
         map.put(3,"what");
         map.put(2,"sup");
         map.put(1, "yo");
