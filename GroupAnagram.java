@@ -5,7 +5,7 @@ import java.util.List;
 public class GroupAnagram {
     public static void main(String[] args) {
         String st[]={"eat","tea","tan","ate","nat","bat"};
-        List<List<String>>ans=new ArrayList<List<String>>();
+        List<List<String>>ans=new ArrayList<>();
         HashMap<String,List<String>>map=new HashMap<>();
 
         for(int i=0;i<st.length;i++){
@@ -34,6 +34,7 @@ public class GroupAnagram {
         StringBuilder sb=new StringBuilder();
         for(int a:arr){
             sb.append(a);
+            sb.append(",");
         }
         return sb.toString();
     }
