@@ -18,5 +18,6 @@ public class Swap
 		int a=ob.nextInt();
 		int b=ob.nextInt();
 		swap(arr,a,b);
+        ob.close();
 	}
 }
