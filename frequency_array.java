@@ -16,6 +16,18 @@ class frequency_array{
             freq[arr[i]]++;
         }
         System.out.println(Arrays.toString(freq));
+        sort(arr,freq);
         ob.close();
+    }
+    private static void sort(int arr[],int freq[]){
+        int j=0;
+        for(int i=0;i<freq.length;i++){
+            int n=freq[i];
+            while(n-->0){
+                arr[j]=i;
+                j++;
+            }
+        }
+        System.out.println(Arrays.toString(arr));
     }
 }
