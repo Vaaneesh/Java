@@ -15,7 +15,7 @@ public class Smallest_positive {
             if(arr[i]>0 && a==arr[i])
             a++;
         }
-        System.out.println(ainsert);
+        System.out.println(a);
         ob.close();
     }
 }
