@@ -12,7 +12,7 @@ public class LinkedList {
         }
     }
 
-    Node head;
+    LinkedList.Node head;
     int size;
     Node tail;
 
@@ -134,5 +134,12 @@ public class LinkedList {
             System.out.print(temp.data+"-->");
             temp=temp.next;
         }
+    }
+
+    public void printlist(ReverselinkedList.Node head2) {
+    }
+
+    public ReverselinkedList.Node reverse(ReverselinkedList.Node head2) {
+        return null;
     }
 }
