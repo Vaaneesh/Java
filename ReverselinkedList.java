@@ -33,9 +33,9 @@ public class ReverselinkedList {
     public static void main(String[] args) {
         Scanner ob=new Scanner(System.in);
         ReverselinkedList list=new ReverselinkedList();
-        list.head=new Node(85);
+        ReverselinkedList.head=new Node(85);
         ReverselinkedList.head.next=new Node(40);
-        list.head.next.next=new Node(50);
+        ReverselinkedList.head.next.next=new Node(50);
         list.printlist(head);
         head=list.reverse(head);
         list.printlist(head);
