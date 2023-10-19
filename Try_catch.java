@@ -11,7 +11,7 @@ public class Try_catch {
             System.out.println("Result=> "+c);
         }
         catch(Exception e){
-            System.out.println(e.getClass().getName());
+            System.out.println(e);
         }
         ob.close();
     }
