@@ -4,7 +4,7 @@ public class Kth_element {
     public static void main(String[] args) {
         Scanner ob=new Scanner(System.in);
         System.out.println("Enter linked list");
-        List<Integer> list=new java.util.LinkedList<>();
+        ArrayList<Integer>list=new ArrayList<>();
         while(true){
             int n=ob.nextInt();
             if(n==-1)

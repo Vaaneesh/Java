@@ -9,6 +9,7 @@ public class permutation_string {
         String s2=ob.next();
         int l1=s1.length();
         int l2=s2.length();
+        ob.close();
         if(l1!=l2){
             System.out.println("Not permutable");
         }
@@ -25,6 +26,5 @@ public class permutation_string {
             }
             System.out.println("Permutable");
         }
-        ob.close();
     }
 }
